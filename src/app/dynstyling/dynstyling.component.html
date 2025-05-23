@@ -1,0 +1,9 @@
+<p>dynstyling works!</p>
+<h1 [style.color]="color" 
+[style.fontSize]="fontSize"
+[style.width.px]="width">
+ this is red color
+</h1>
+
+<p [style.fontSize] = "zoom ? bigHeading : smallHeading">vary font size</p>
+<button (click)="toggleZoom()">toggleZoom</button>

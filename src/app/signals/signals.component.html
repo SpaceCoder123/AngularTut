@@ -1,0 +1,34 @@
+<p>signals works!</p>
+
+<h1>{{ count() }}</h1>
+<button (click)="updateValue('inc')">Increment</button>
+<button (click)="updateValue('dec')">Decrement</button>
+<button (click)="updateValue('reset')">Reset</button>
+
+<h1>{{ data() }}</h1>
+
+<button (click)="updateData('inc')">Update String</button>
+<button (click)="updateData(2)">Update Integer</button>
+
+<h2>Writable Signal</h2>
+
+<hr>
+
+<h1>Computed signals</h1>
+
+<h1>{{this.z()}}</h1>
+
+<button (click)="updateTotal()">Update total</button>
+
+<hr>
+
+<h1>effects</h1>
+
+<h1>{{varCount()}}</h1>
+
+@if(displayHeading)
+{
+    <h1 style="background-color: green;color: white;"> this is a heading</h1>
+}
+
+<button (click)="updateVarCount()">Update var count</button>

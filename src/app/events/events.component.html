@@ -1,0 +1,13 @@
+<button name="event" class=".button" (click)="handleEvent($event)"> click here </button>
+<br>
+<br>
+<div (click)="handleEvent($event)" style="background-color: green; width: 100px; height: 100px;"></div>
+<br>
+<br>
+<div (mouseenter)="handleEvent($event)" style="background-color: red; width: 100px; height: 100px;"></div>
+<br>
+<br>
+<div (mouseleave)="handleEvent($event)" style="background-color: blue; width: 100px; height: 100px;"></div>
+<br>
+<br>
+<input (input)="handleEvent($event)" (focus)="handleEvent($event)" (blur)="handleEvent($event)" type="text" name="user">

@@ -1,0 +1,30 @@
+<h1>Directives is a class that adds 
+    additional behavior to elements in your application</h1>
+
+<h2 *ngIf="toggleHeading">Toggle Heading</h2>
+<button (click)="toggleHeadingValue()"> toggleHeading</button>
+
+<li *ngFor="let x of list">
+    {{x}}
+</li>
+
+<li *ngFor="let student of studentData">
+    {{student.name}}
+    {{student.age}}
+    {{student.dob}}
+
+    <ul>
+        <li *ngFor="let subject of student.subjects">
+            {{subject}}
+        </li>
+    </ul>
+</li>
+
+<div *ngIf="login; else elseBlock" >
+    <h1 style="background-color: magenta; color: white;">Login</h1>
+</div>
+<ng-template #elseBlock>
+    <h1 style="background-color: white; color: black;"> Logout</h1>
+</ng-template>
+
+<button (click)="toggleLogin()">Toggle</button>

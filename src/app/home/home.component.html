@@ -1,0 +1,14 @@
+<p>home works!</p>
+
+<!-- <a [routerLink]="['profile',{name:'mohan'}]" > Navigate to Profile</a> -->
+<!-- <button (click)="goToProfile()"> Navigate to profile page</button> -->
+<ul>
+  <li *ngFor="let user of users">
+    <ul>
+      <!-- <li>{{ user.id }}</li> -->
+      <li><a routerLink="user/{{user.id}}/{{user.name}}"> {{ user.name }}</a></li>
+      <!-- <li>{{ user.email }}</li>
+      <li>{{ user.age }}</li> -->
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<p>controlflow works!</p>
+
+<button (click)="toggleColors('blue')">blue</button>
+<button (click)="toggleColors('red')">red</button>
+<button (click)="toggleColors('magenta')">magenta</button>
+<button (click)="toggleColors('pink')">pink</button>
+
+@switch (color) { @case ('red') {
+<div class="red"></div>
+} @case ('blue') {
+<div class="blue"></div>
+} @case ('pink') {
+<div class="pink"></div>
+} @case ('magenta') {
+<div class="magenta"></div>
+} @default {
+<div class="white">white</div>
+} }

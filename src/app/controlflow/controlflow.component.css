@@ -1,0 +1,39 @@
+.green
+{
+    width:200px;
+    height: 200px;
+    background-color: green;
+}
+.red
+{
+    width:200px;
+    height: 200px;
+    background-color: red;
+}
+
+.blue
+{
+    width:200px;
+    height: 200px;
+    background-color: blue;
+}
+.pink
+{
+    width:200px;
+    height: 200px;
+    background-color: pink;
+}
+.magenta
+{
+    width:200px;
+    height: 200px;
+    background-color: magenta;
+}
+
+.white
+{
+    width:200px;
+    height: 200px;
+    background-color: white;
+    color:black;
+}
