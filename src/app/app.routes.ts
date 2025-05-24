@@ -6,6 +6,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     {path:"about", component:AboutComponent},
@@ -13,7 +14,7 @@ export const routes: Routes = [
     {path:"contact", component:ContactComponent},
     {path:"profile", component:ProfileComponent},
     {path:"user/:id/:name", component:UserComponent},
-    {path:"home", component: HomeComponent},
+    // {path:"home", component: HomeComponent},
     {path:"", component:HomeComponent},
     {path:"**", component:PagenotfoundComponent} // wild card routing
 ];

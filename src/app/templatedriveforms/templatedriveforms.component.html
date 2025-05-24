@@ -1,0 +1,22 @@
+<form #userform="ngForm" (ngSubmit)="getData(userform.value)">
+    <input type="text" placeholder="enter name" name="name" ngModel>
+    <br>
+    <br>
+    <input type="text" placeholder="enter password" name="password" ngModel>
+    <br>
+    <br>
+    <select name="gender" ngModel>
+        <option value=""> Select gender</option>
+        <option value="male"> Male</option>
+        <option value="female"> Female</option>
+    </select>
+    <br>
+    <br>
+    <input type="range" min="0" max="10" name="range" ngModel>
+    <button>Submit</button>
+</form>
+
+<h2>{{ this.userDetails?.name }}</h2>
+<h2>{{ this.userDetails?.password }}</h2>
+<h2>{{ this.userDetails?.gender }}</h2>
+<h2>{{ this.userDetails?.range }}</h2>

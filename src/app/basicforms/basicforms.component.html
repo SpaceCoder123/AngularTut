@@ -1,0 +1,14 @@
+<p>basicforms works!</p>
+
+<form action="" method="post">
+  <input type="text" placeholder="enter name" [formControl]="name" />
+  <br />
+  <br />
+  <input type="text" placeholder="enter password" [formControl]="password" />
+  <br />
+  <br />
+  <button type="button" (click)="getLoginDetails()"> Login </button>
+  <button type="button" (click)="setValue()"> Set </button>
+  <h2>{{ name.value }}</h2>
+  <h2>{{ password.value }}</h2>
+</form>
