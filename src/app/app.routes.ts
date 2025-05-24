@@ -13,6 +13,7 @@ export const routes: Routes = [
     {path:"contact", component:ContactComponent},
     {path:"profile", component:ProfileComponent},
     {path:"user/:id/:name", component:UserComponent},
+    {path:"home", component: HomeComponent},
     {path:"", component:HomeComponent},
     {path:"**", component:PagenotfoundComponent} // wild card routing
 ];
